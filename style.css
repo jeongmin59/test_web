@@ -207,7 +207,7 @@ header,
 #my-intro .profile-img{
     height: 36rem;
     width: 23rem;
-    background-image: url(./img/profile.jpg);
+    background-image: url(./img/cat_image.jpg);
     background-size: cover;
 }
 
@@ -413,7 +413,7 @@ header,
     margin-bottom: 80px;
 }
 
-#contack h2, h3{
+#contack h2, #contack h3{
     text-align: center;
 }
 
