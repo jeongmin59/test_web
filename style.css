@@ -1,0 +1,535 @@
+*{
+    font-family: 'Gowun Dodum', sans-serif;
+    list-style: none;
+    /* li태그 기본제거 */
+}
+
+ul{
+    padding-left: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#not-provided{
+    display: none;
+    /* visibility: hidden; 빈 공간 남아있음
+    display: none; 공간 x */
+}
+
+@media (max-width: 575px){
+    header,
+    main,
+    article,
+    footer{
+        display: none !important;
+    }
+    #not-provided{
+        display: block;
+    }
+}
+
+/* header */
+
+header > nav > .icon-container{
+    margin-left: 12rem;
+}
+
+header > nav > .navbar-nav{
+    margin-right : 12rem;
+}
+
+header > nav {
+    background-color: white;
+}
+
+header .icon-container span{
+    font-size: 3rem;
+}
+
+header ul{
+    font-size:1.4rem;
+}
+
+header > nav li {
+    font-size: 1.2rem;
+}
+
+@media (max-width:992px){
+    header > nav > .icon-container{
+        margin-left: 12rem;
+    }
+    header > nav > .icon-container{
+        margin-right: 12rem;
+    }
+}
+
+/* #my-intro,
+#frontpage{
+    padding-top:5rem;
+} */
+
+#my-intro {
+    padding-top: 3rem;
+}
+
+/* #frontpage{
+    padding-top: 3rem;
+} */
+
+#frontpage > .title-container > h2,
+.info-text-container .top-text,
+.info-text-container .icon-container
+{
+    color: slategray;
+}
+
+#frontpage > .title-container > a > .btn,
+#skills, #contack .icon-container
+{
+    background-color: rgb(123, 123, 230);
+}
+
+#frontpage > .title-container > h3,
+section.info-text-container h2,
+section.info-text-container ul
+{
+    color: rgb(123, 123, 230);
+}
+
+#frontpage > .title-container > ul,
+#my-intro .info-text-container .column-data
+{
+    color: slategray;
+}
+
+h2,
+h3,
+header,
+#my-intro .info-text-container .column-data,
+#my-intro .info-text-container .column-name
+{
+    font-weight: bold;
+}
+
+#frontpage{
+    background-color: rgb(236, 235, 255);
+    display: flex;
+    height: 100vh;
+}
+
+/* #frontpage > .title-container{
+    flex: 1
+} */
+
+.frontpage-img-container{
+    flex: 3;
+    background-image: linear-gradient(to left, transparent, rgb(236, 235, 255)), url('./img/night-photograph-g2746b9dff_1920.jpg');
+    background-size: cover;
+}
+
+#frontpage > nav {
+    width:100px;
+}
+
+#frontpage > nav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:70%;
+}
+
+#frontpage > nav li{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#frontpage > nav .github-icon{
+    height: 3rem;
+}
+
+#frontpage > nav .tistory-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+#frontpage > nav .instargram-icon {
+    height: 3rem;
+}
+
+#frontpage > .title-container{
+    padding-left: 5rem;
+    padding-top: 10rem;
+    padding-right: 5rem;
+}
+
+#frontpage > .title-container > h3{
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+
+#frontpage > .title-container > ul{
+    margin-bottom: 30px;
+}
+
+#frontpage > .title-container button{
+    margin-right: 20px;
+    border-radius: 10px;
+    color:white;
+}
+
+
+#my-intro{
+    display: flex;
+    align-items: center;
+}
+
+#my-intro > .my-intro-layout-parent{
+    display: flex;
+    margin-bottom: 120px;
+}
+
+#my-intro .profile-img-container{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#my-intro .info-text-container{
+    flex:2;
+    padding-left:50px;
+}
+
+#my-intro .profile-img{
+    height: 36rem;
+    width: 23rem;
+    background-image: url(./img/profile.jpg);
+    background-size: cover;
+}
+
+#my-intro .info-text-container .top-text{
+    margin-bottom:40px;
+}
+
+#my-intro .info-text-container .contack-info-ul {
+    height: 200px;
+    display: flex;
+}
+
+@media(max-width:992px){
+    #my-intro .info-text-container .top-text{
+       margin-top: 20px;
+    }
+}
+
+@media(max-width: 992px){
+    #my-intro > .my-intro-layout-parent{
+        flex-direction: column;
+    }
+}
+
+#my-intro .info-text-container h3{
+    margin-bottom:20px;
+}
+
+#my-intro .info-text-container p{
+    margin-bottom:30px;
+}
+
+#my-intro .info-text-container > .contact-info-ul{
+    height: 200px;
+    display: flex;
+    margin-bottom:40px;
+    flex-direction: column;
+}
+
+#my-intro .my-interests-container > h2{
+    margin-bottom:20px;
+}
+
+#my-intro .my-interests-container > ul{
+    display: flex;
+}
+
+#my-intro .my-interests-container li{
+    margin-right: 4rem;
+    width:2rem;
+    justify-content: space-between;
+    display: flex;
+}
+
+#my-intro .contact-info-ul .row{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#my-intro .contact-info-ul .icon-container{
+    flex:1;
+}
+#my-intro .contact-info-ul .column-name{
+    flex:4;
+}
+#my-intro .contact-info-ul .column-data{
+    flex:5;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:992px){
+    #my-intro .my-intro-layout-parent{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+@media (max-width:992px){
+    #frontpage > nav li{
+        display: none;
+    }
+
+    #frontpage > .title-container{
+        padding-left:1rem;
+        padding-top: 8rem;
+    }
+
+    #frontpage h2{
+        font-size: 2rem;
+    }
+
+    #frontpage h2{
+        font-size: 1.8rem;
+    }
+
+    #frontpage ul{
+        font-size: 0.8;
+    }
+}
+
+@media (max-width:1200px){
+    .frontpage-img-container{
+        display: none;
+    }
+}
+
+#skills > ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#skills > h2 {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#skills .card {
+    width: 20rem;
+    margin-bottom: 100px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#skills .card-header {
+    font-size: 1.5rem;
+}
+
+#skills > ul img {
+    height: 4rem;
+    margin-top: 10px;
+}
+
+#project h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#project > .edu-project-container{
+    display: flex;
+}
+
+#project .edu-container{
+    flex: 2;
+}
+
+#project .project-container{
+    flex: 1;
+}
+
+@media(max-width:992px){
+    #project > .edu-project-container {
+        flex-direction: column;
+    }
+}
+
+#project > .edu-project-container h3{
+    display: flex;
+    align-items: center;
+}
+
+#project > .edu-project-container h3 .material-symbols-outlined{
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
+#project .date{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#project .date-data{
+    margin-left: 20px;
+}
+
+#project li {
+    border-left: 5px solid purple;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+/* contack */
+#contack {
+    margin-bottom: 80px;
+}
+
+#contack h2, h3{
+    text-align: center;
+}
+
+#contack h2 {
+    font-size: 2rem;
+}
+#contack h3 {
+    font-size: 3rem;
+    margin-bottom: 80px;
+}
+
+#contack .contack-container {
+    display: flex;
+}
+
+#contack .input-container {
+    flex: 2;
+}
+
+#contack .name-email-container,
+#contack .title-container,
+#contack .conteck-container
+{
+    margin-bottom: 40px;
+}
+
+#contack .name-email-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-container, .email-container {
+    flex: 1;
+}
+
+.name-container {
+    margin-right: 20px;
+}
+
+.email-container {
+    margin-left: 20px;
+}
+
+#contack .contack-info-container{
+    flex: 1;
+}
+
+#contack-input-content{
+    height: 300px;
+}
+
+#contack > div > div.input-container > button{
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 100%;
+    height: 50px;
+}
+
+#contack-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px){
+    .contack-info-container {
+        display: none;
+    }
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+#contack .icon-container{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contack .icon-container span{
+    font-size:2rem;
+    color:white;
+}
+
+.kategorie{
+    margin-left:30px;
+}
+
+.kategori-name{
+    font-size:1.5rem;
+}
+
+
+
+
+
+/* footer */
+
+footer{
+    height:100px;
+    background-color: rgb(123, 123, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : white;
+    font-size:1.3rem;
+}
+
+@media (max-width:768px){
+    footer{
+        font-size: 1rem;
+    }
+}
